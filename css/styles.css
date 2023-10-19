@@ -383,10 +383,11 @@ p, h1,h2,h3,h4,h5,h6 {
 /* -----------SECTION 4--------- */
 
 .subject {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .subject-container {
+    max-width: 288px;
 }
 
 .subject-lead {
@@ -415,8 +416,9 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .subject-item {
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 356px;
 }
 
 .subject-item:hover {
@@ -432,6 +434,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .item-pic {
     position: relative;
     overflow: hidden;
+
 }
 
 .add-pic {
@@ -872,7 +875,7 @@ p, h1,h2,h3,h4,h5,h6 {
         text-transform: none;
         margin-bottom: 36px;
     }
-    
+
     .title-subtitle {
     text-align: left;
     }
