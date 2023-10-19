@@ -219,7 +219,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .title {
     padding: 96px 0;
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .visually-hidden {
@@ -245,11 +245,12 @@ p, h1,h2,h3,h4,h5,h6 {
 .title-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px 24px;
 }
 
 .title-item {
     /* width: calc((100% - 72px) / 4); */
+    max-width: 356px;
 }
 
 .container-icon {
@@ -271,6 +272,7 @@ p, h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     text-align: center;
+    color: #2E2F42;
 }
 
 .title-text {
@@ -852,5 +854,26 @@ p, h1,h2,h3,h4,h5,h6 {
         max-width: 320px;
         padding-left: 16px;
         padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .headline {
+        padding: 112px 0;
+    }
+
+    .headline-slogan {
+        font-size: 56px;
+        max-width: 496px;
+        text-transform: none;
+        margin-bottom: 36px;
+    }
+    
+    .title-subtitle {
+    text-align: left;
     }
 }
