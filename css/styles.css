@@ -359,7 +359,8 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .title-container {
-    max-width: 288px;    
+    max-width: 288px;
+    padding: 0;    
 }
 
 .title-lead {
@@ -441,8 +442,8 @@ p, h1,h2,h3,h4,h5,h6 {
 .caption-item {
     background-color: #ffffff;
         /* width: calc((100% - 72px) / 4); */
-        border-radius: 0px 0px 4px 4px;
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
             0px 1px 1px 0px rgba(46, 47, 66, 0.16),
             0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -603,18 +604,18 @@ p, h1,h2,h3,h4,h5,h6 {
 }
 
 .subject-subtitle {
-        color: #2E2F42;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        margin-bottom: 8px;
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .subject-text {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* ----------------------------- */
@@ -1014,6 +1015,8 @@ p, h1,h2,h3,h4,h5,h6 {
     background-color: #404BBF;
 }
 
+/* ==============TAB============ */
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -1061,13 +1064,13 @@ p, h1,h2,h3,h4,h5,h6 {
         letter-spacing: 0.04em;
     }
     
-        .menu-open-btn {
-            display: none;
-        }
+    .menu-open-btn {
+        display: none;
+    }
     
-        .menu-mob {
-            display: none;
-        }
+    .menu-mob {
+        display: none;
+    }
 
     .headline {
         padding: 112px 0;
@@ -1087,7 +1090,77 @@ p, h1,h2,h3,h4,h5,h6 {
     .caption-list {
         gap: 64px 24px;
     }
+
+    .subject-list {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .footer > .container {
+        width: 552px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        text-align-last: left;
+    }
+
+    .footer-dop {
+        max-width: 264px;
+        margin-right: 24px;
+        margin-bottom: 72px;
+    }
+
+    .footer-text {
+        text-align: left;
+    }
+
+    .footer-social {
+        margin-right: auto;
+        text-align: left;
+        width: 208px;
+        margin-bottom: 0;
+    }
+
+    .footer-form {
+        width: 453px;
+    }
+
+    .footer-form-box {
+        flex-wrap: nowrap;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .subtitle-footer-text {
+        text-align-last: left;
+    }
+
+        /*= Modal= */
+
+    .modal {
+        min-height: 584px;
+        width: 408px;
+    }
+
+    .modal-text {
+        width: 360px;
+    }
+
+    .modal-input {
+        padding-left: 34px;
+    }
+
+    .check-text a {
+        margin-left: 3px;
+    }
+    
+    .check-text span {
+        margin-right: 8px;
+    }
 }
+
+/* ===============DESKTOP============ */
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -1180,5 +1253,66 @@ p, h1,h2,h3,h4,h5,h6 {
 
     .caption {
         padding: 120px 0;
+    }
+
+
+
+    /* ========Footer====== */
+    
+    .footer > .container {
+        width: 1158px;
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
+    .footer-dop {
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+
+    .footer-logo {
+        text-align-last: left;
+    }
+
+    .footer-social {
+        margin-right: auto;
+        text-align: left;
+        width: 208px;
+        margin-bottom: 0;
+    }
+
+    .subtitle-footer-text {
+        text-align: justify;
+    }
+
+    /* =====Modal===== */
+
+    .modal {
+        min-height: 584px;
+        width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
+    
+    .modal-text {
+        width: 360px;
+    }
+    
+    .modal-input {
+        padding-left: 38px;
+    }
+
+    .check-text a {
+        margin-left: 3px;
+    }
+    
+    .check-text span {
+        margin-right: 8px;
     }
 }
