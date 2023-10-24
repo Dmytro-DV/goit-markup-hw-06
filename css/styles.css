@@ -299,6 +299,16 @@ p, h1,h2,h3,h4,h5,h6 {
 .headline-container {
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/bg-mob-2x.jpg);
+    }
+}
+
 .headline-slogan {
     color: #FFFFFF;
     text-align: center;
@@ -1018,6 +1028,23 @@ p, h1,h2,h3,h4,h5,h6 {
 /* ==============TAB============ */
 
 @media screen and (min-width: 768px) {
+    .headline {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/bg-tab.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                          rgba(46, 47, 66, 0.7)),
+                      url(../images/bg-tab-2x.jpg);
+        }
+    }
+    
+
     .container {
         max-width: 768px;
     }
@@ -1215,6 +1242,20 @@ p, h1,h2,h3,h4,h5,h6 {
 
     .headline {
         padding: 188px 0;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                          rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-2x.jpg);
+        }
     }
 
     .headline-slogan {
